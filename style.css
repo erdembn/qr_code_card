@@ -1,0 +1,86 @@
+:root {
+    --background-color: hsl(212, 45%, 89%);
+    --container-color: hsl(0, 0%, 100%);
+    --parag-color: hsl(220, 15%, 55%);
+    --heading-color: hsl(218, 44%, 22%);
+    --main-font: 'Outfit', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    height: 470px;
+    width: 320px;
+    margin: 30px;
+
+
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.qr-code img {
+    width: 290px;
+    height: 270px;
+    border-radius: 10px;
+
+
+}
+
+.text {
+    text-align: center;
+    padding: 15px;
+
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--heading-color);
+}
+
+.container p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--parag-color);
+    padding-left: 5px;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
